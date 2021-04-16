@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: url(public/images/lawandpublic.png);
+    background: url(assets/flag.png);
     background-size: cover;
     
 }   
@@ -19,11 +19,12 @@ body{
     padding: 70px 30px;
 }
 .logo{
-    width: 160px;
-    height: 65px;
+    width: 100px;
+    height: 110px;
     position: absolute;
     top: -50px;
-    left: calc(50% - 70px);
+    left: calc(50% - 50px);
+    border-radius: 50px;
 }
 h1{
     margin: 0;
@@ -53,13 +54,13 @@ h1{
     border: none;
     outline: none;
     height: 40px;
-    background: #F7931D;
+    background: #BF0A30;
     color: #fff;
     font-size: 18px;
     border-radius: 20px;
 }
 .loginbox input[type="submit"]:hover{
     cursor: pointer;
-    background: #ffc107;
+    background: red;
     color: #000;
 }

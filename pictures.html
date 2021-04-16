@@ -6,16 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="pictures.css" rel="stylesheet">
+    <link href="reset.css" rel="stylesheet">
+    <script src="pictures.js"></script>
 </head>
 <body>
-    <div class="image">
-        <img class="img" src="assets/pablo.jpeg" alt="pablo">
-        <div class="overlay">
-            <div class="imageTitle">Life of pablo</div>
-            <p class="imageDescription">
-                Greatest masterpiece
-            </p>
+    <div id="cluster">
+        <div class="votes" onmouseleave="leaveFunction()">
+            <h1>Richard nixon</h1>
+            <img src="assets/nixon2.jpeg" alt="nixon"><br>
+            <button onclick="yesAlert()">VOTE NIXON!</button>
         </div>
+        <div class="votes">
+            <h1>George McGovern</h1>
+            <img src="assets/no.png" alt="not found" height="251px" onmousemove="perhapsAlert()"><br>
+            <button onclick="noAlert()">You dont want to vote for McGovern he'll take your money</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div id="cluster">
+        <div class="image" >
+            <img class="img" src="assets/nixon4.jpeg" alt="pablo">
+            <div class="overlay">
+                <div class="imageTitle">Vote</div>
+                <p class="imageDescription">
+                
+                </p>
+            </div>
+        </div>
+        <div class="image">
+            <img class="img" src="assets/nixon5.jpeg" alt="pablo">
+            <div class="overlay">
+                <div class="imageTitle">Richard</div>
+                <p class="imageDescription">
+                </p>
+            </div>
+        </div>
+        <div class="image">
+            <img class="img" src="assets/nixon6.jpeg" alt="pablo">
+            <div class="overlay">
+                <div class="imageTitle">Nixon</div>
+                <p class="imageDescription">
+                </p>
+            </div>
+        </div>
+        <div class="image">
+            <img class="img" src="assets/nixon7.jpeg" alt="pablo">
+            <div class="overlay">
+                <div class="imageTitle">For</div>
+                <p class="imageDescription">
+                </p>
+            </div>
+        </div>
+        <div class="image">
+                <img class="img" src="assets/nixon3.jpeg" alt="pablo">
+                <div class="overlay">
+                    <div class="imageTitle">President</div>
+                    <p class="imageDescription">
+                    </p>
+                </div>
+            </div>
     </div>
 </body>
 </html>
