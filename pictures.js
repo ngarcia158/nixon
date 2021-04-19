@@ -1,14 +1,19 @@
+
+window.addEventListener('contextmenu', e => {
+    e.preventDefault();
+  });
+  
 function noAlert(){
-    alert('Please Choose the correct candidate');
+    this.alert('Please Choose the correct candidate');
 }
 function yesAlert(){
-    alert('Thank you for your vote')
+    this.alert('Thank you for your vote')
 }
 function perhapsAlert(){
-    alert('VOTE NIXON');
+    this.alert('VOTE NIXON');
 }
 window.onload = setTimeout(() => {
-        alert('Make the right decision america is watching');   
+        this.alert('Make the right decision america is watching');   
 }, 100);
 var richard = 0;
 var nixon = 0;
@@ -17,11 +22,11 @@ var the = 0;
 var best = 0;
 
 
-var arrayForDivImages = [richard, nixon, is, the, best]
-var div = document.getElementById('cluster')
-function leaveFunction(){
-    var i = 0; arrayForDivImages.length; i++;{
-       div += arrayForDivImages[i]
-    }
-};
+// var arrayForDivImages = [richard, nixon, is, the, best]
+// var div = document.getElementById('cluster')
+// function leaveFunction(){
+//     var i = 0; arrayForDivImages.length; i++;{
+//        div += arrayForDivImages[i]
+//     }
+// };
 
