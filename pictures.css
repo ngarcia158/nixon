@@ -56,6 +56,9 @@ body{
 #cluster{
     display: flex;
 }
+#cluster2{
+    display: flex;
+}
 
 .votes{
     margin: auto;

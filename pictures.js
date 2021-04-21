@@ -15,11 +15,11 @@
 // window.onload = setTimeout(() => {
 //         this.alert('Make the right decision america is watching');   
 // }, 100);
-var richard = `<div class="image"><img class="img" src="assets/nixon4.jpeg" alt="pablo"> <div class="overlay"><div class="imageTitle">Vote</div><p class="imageDescription" </p></div></div>`
-var nixon = `<div class="image"><img class="img" src="assets/nixon5.jpeg" alt="pablo"><div class="overlay"><div class="imageTitle"><p id="noContextMenu">Richard</p></div><p class="imageDescription"></p></div></div>`;
-var is = `<div class="image"><img class="img" src="assets/nixon6.jpeg" alt="pablo"><div class="overlay"><div class="imageTitle noContextMenu">Nixon</div>    <p class="imageDescription"></p></div></div></div>`;
-var the = `<div class="image"><img class="img" src="assets/nixon7.jpeg" alt="pablo"><div class="overlay"><div class="imageTitle noContextMenu">For</div><p class="imageDescription"></p></div></div>`;
-var best = `div class="image"><img class="img" src="assets/nixon3.jpeg" alt="pablo"><div class="overlay"><div class="imageTitle noContextMenu">President</div><p class="imageDescription"></p></div></div>`;
+var richard = `<img class="img" src="assets/nixon4.jpeg" alt="pablo"> <div class="overlay"><div class="imageTitle">Vote</div><p class="imageDescription" </p></div>`;
+var nixon = `<img class="img" src="assets/nixon5.jpeg" alt="pablo"><div class="overlay"><div class="imageTitle"><p id="noContextMenu">Richard</p></div><p class="imageDescription"></p></div>`;
+var is = `<img class="img" src="assets/nixon6.jpeg" alt="pablo"><div class="overlay"><div class="imageTitle noContextMenu">Nixon</div>    <p class="imageDescription"></p></div></div>`;
+var the = `<img class="img" src="assets/nixon7.jpeg" alt="pablo"><div class="overlay"><div class="imageTitle noContextMenu">For</div><p class="imageDescription"></p></div>`;
+var best = `<img class="img" src="assets/nixon3.jpeg" alt="pablo"><div class="overlay"><div class="imageTitle noContextMenu">President</div><p class="imageDescription"></p></div>`;
 
 var displayArray = [richard, nixon, is, the, best];
 // var arrayForDivImages = [richard, nixon, is, the, best]
@@ -29,9 +29,8 @@ var displayArray = [richard, nixon, is, the, best];
 //        div += arrayForDivImages[i]
 //     }
 // };
-document.body.onload = placeItems();
 
-
+var calculator = false;
 function placeItems () {
 //   // create a new div element
 //   const newDiv = document.getElementById("cluster").createElement("div");
@@ -45,12 +44,26 @@ function placeItems () {
 //   // add the newly created element and its content into the DOM
 //   const currentDiv = document.getElementById("div1");
 //   document.body.after();
-    // var node = document.createElement("div");
-    // var textnode = document.createTextNode("Water");
-    // node.appendChild(textnode);
-    // document.getElementById("cluster").appendChild(node);
-    // node.setAttribute('id', 'image')
 
+
+    
+
+    for(var i = 0; i <= displayArray.length; i++){
+        if(calculator == false){
+            var node = document.createElement("div");
+            document.getElementById("cluster2").appendChild(node);
+            node.setAttribute('class', 'image');
+            var divClass = document.getElementById("image");
+            divClass.textContent = displayArray[i];
+            calculator = true;
+            if(mouseLeave === true){
+                calculator = false;
+            }
+        }
+        else{
+            return node
+        }
+    }
     
 
 }
